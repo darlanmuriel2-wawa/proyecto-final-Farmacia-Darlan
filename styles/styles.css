@@ -21,7 +21,7 @@
 
 body{
 
-    background-image: url('/images/fondo-farmacia.png');
+    background-image: url('../images/fondo-farmacia.png');
 
     background-size: cover;
 
@@ -109,7 +109,10 @@ body {
     height: 100px;
 }
 
-/* Navbar más compacto */
+.verde-menu {
+    color: #00e676 !important;
+    font-weight: bold;
+}
 
 
 
@@ -119,6 +122,11 @@ body {
     border-radius: 5px;
 }
 
+.sidebar {
+    border: 1px solid #0d6efd; /* 1px de grosor, línea continua (solid), color azul */
+    border-radius: 4px;        /* Opcional: para que las esquinas del rectángulo queden redondeadas como tus botones */
+    padding: 15px;             /* Opcional: para que el texto de adentro no quede pegado al borde azul */
+}
 
 
 
@@ -239,7 +247,7 @@ body {
     height: 30px;
            
   
-    background-image: url('images/facebook.png'); 
+    background-image: url('../images/facebook.png'); 
     
     background-size: contain;    
     background-repeat: no-repeat; 
