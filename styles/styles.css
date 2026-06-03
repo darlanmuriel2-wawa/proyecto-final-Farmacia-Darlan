@@ -239,7 +239,7 @@ body {
     height: 30px;
            
   
-    background-image: url('/images/facebook.png'); 
+    background-image: url('images/facebook.png'); 
     
     background-size: contain;    
     background-repeat: no-repeat; 
@@ -253,7 +253,7 @@ body {
     height: 30px;
            
   
-    background-image: url('/images/social.png'); 
+    background-image: url('../images/social.png'); 
     
     background-size: contain;    
     background-repeat: no-repeat; 
@@ -267,7 +267,7 @@ body {
     height: 30px;
            
   
-    background-image: url('/images/whatsapp.png'); 
+    background-image: url('../images/whatsapp.png'); 
     
     background-size: contain;    
     background-repeat: no-repeat; 
