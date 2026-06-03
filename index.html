@@ -1,80 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PharmaSystem</title>
-    <link rel="stylesheet" href="styles/styles.css">
-   
-</head>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark fondo-navbar sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="/images/pharmasystem2.png" alt="Logo PharmaSystem" class="logo-imagen" />
+          <span class="ms-5 nombre-tienda"> Bienvenidos </span>
+        </a>
 
-<header class="banner">
-   <section class="logo-imagen"></section>
-        <h1>Bienvenidos</h1>
-        <label for="pharma-search">Buscar</label>
-        <input id="pharma-search">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    </section>
-    <nav class="menu-principal">
-        <ul>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Tiendas</a></li>
-            <li><a href="#" class="btn-login">Login</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tiendas</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categorías</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registro.html">Iniciar Sesión</a>
+            </li>
+          </ul>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar Productos"
+            />
+            <button class="btn btn-outline-light">Buscar</button>
+          </form>
+        </div>
+      </div>
     </nav>
-</header>
 
-<main>
-    <!-- Sección de Productos Destacados -->
-    <section class="productos-destacados">
-        <h2>Productos Destacados</h2>
-        
-        <section class="contenedor-productos">
+    <main class="container-fluid flex-grow-1">
+      <div class="row min-vh-100">
+        <aside class="col-md-2 sidebar">
+          <h4 class="text-white mt-3">Menú</h4>
+          <ul class="nav flex-column mt-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Inicio</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categorías</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="registro.html">Iniciar Sesión</a>
+            </li>
+          </ul>
+        </aside>
+
+        <section class="col-md-10 contenido">
+          <h2 class="text-center mt-4 mb-4">Productos Destacados</h2>
+
+          <div class="contenedor-productos">
             <article class="producto">
-                <img src="images/shotb.webp" alt="Vitaminas">
-                <h3>Multivitamínicos</h3>
-                <p>Refuerza tus defensas diariamente.</p>
+              <img src="images/shotb.webp" alt="Vitaminas" />
+              <h3>Multivitamínicos</h3>
+              <p>Refuerza tus defensas diariamente.</p>
             </article>
 
             <article class="producto">
-                <img src="images/isodine.webp" alt="Cuidado Piel">
-                <h3>Cuidado de la Piel</h3>
-                <p>Cremas hidratantes dermatológicas.</p>
+              <img src="images/isodine.webp" alt="Cuidado Piel" />
+              <h3>Cuidado de la Piel</h3>
+              <p>Cremas hidratantes dermatológicas.</p>
             </article>
 
             <article class="producto">
-                <img src="images/desodorante.webp" alt="Botiquín">
-                <h3>Productos de Aseo Personal</h3>
-                <p>Desodorantes y productos de higiene personal.</p>
+              <img src="images/desodorante.webp" alt="Botiquín" />
+              <h3>Productos de Aseo Personal</h3>
+              <p>Desodorantes y productos de higiene personal.</p>
             </article>
+          </div>
         </section>
-    </section>
-</main>
+      </div>
+    </main>
+    <footer class="footer-simple py-3 fixed-bottom">
+      <div
+        class="container d-flex justify-content-between align-items-center flex-wrap"
+      >
+        <section class="columna-footer">
+          <h4>Nosotros</h4>
+          <p>
+            Tu farmacia de confianza en el barrio, cuidando tu salud desde 2023.
+          </p>
+        </section>
 
+        <section class="columna-footer">
+          <h4>Contáctenos</h4>
+          <p class="mb-1">📍 Calle 10, # 50bb-40 Medellín</p>
+          <p class="mb-1">📞 312617372</p>
+          <p class="mb-0">Servicio 24 Horas</p>
+        </section>
 
-<footer class="footer-simple">
-    <section class="columna-footer">
-        <h4>Nosotros</h4>
-        <p>Tu farmacia de confianza en el barrio, cuidando tu salud desde 2023.</p>
-    </section>
+        <section class="columna-footer2">
+          <h4>Redes Sociales</h4>
+          <ul class="redes-lista mb-0">
+            <li class="red-social">
+              <span class="logo-face"></span>
+              <a href="#">Facebook</a>
+            </li>
+            <li class="red-social">
+              <span class="logo-social"></span>
+              <a href="https://www.instagram.com/">Instagram</a>
+            </li>
+            <li class="red-social">
+              <span class="logo-whastapp"></span>
+              <a href="https://wa.me/312617372">WhatsApp</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
 
-    <section class="columna-footer">
-        <h4>Contáctenos</h4>
-        <p>📍 Calle 10, # 50bb-40 Medellín </p>
-        <p>📞 312617372</p>
-        <p>Servicio 24 Horas</p>
-    </section>
-
-    <section class="columna-footer2">
-        <h4>Redes Sociales</h4>
-        <ul class="redes-lista">
-            <li><a href="#" class="logo-face" >Facebook</a></li>
-            <li><a href="#" class="logo-social" >Instagram</a></li>
-            <li><a href="#" class="logo-whastapp">WhatsApp</a></li>
-        </ul>
-    </section>
-</footer>
-    
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
